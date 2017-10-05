@@ -1,28 +1,131 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">  
-
-    <title>
-    United Eroth Federation
-    </title>
-
-</head>
-
+<title>United Eroth Federation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="#home" class="w3-bar-item w3-button"><b>United</b> Eroth Federation</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#memberships" class="w3-bar-item w3-button">Memberships</a>
+      <a href="#apply" class="w3-bar-item w3-button">Apply</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="pics/city.jpg" alt="UEF" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>UEF</b></span> <span class="w3-hide-small w3-text-light-grey">United Eroth Federation</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Current Projects</h3>
+  </div>    
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Arkeeran Restoration</div>
+        <img src="pics/arkeera.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">The Atlas Project</div>
+        <img src="pics/atlas.jpg" alt="atlas" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Nerv Migration</div>
+        <img src="pics/nerv.jpg" alt="nerv" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Cronos Fleet</div>
+        <img src="pics/cronos2.jpg" alt="cronos" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="memberships">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Memberships</h3>
+    <p>The United Eroth Federation is proud to house a number of corporations, uniting the system with peace, safety, and innovation.
+    <br> For a detailed history of the United Eroth Federation, visit the <a href="docs/history.pdf">archives</a>.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="pics/gfss-logo.png" alt="GFSS" style="width:100%">
+      <h3>GFSS</h3>
+      <p class="w3-opacity">Galactic Federation of Star Systems</p>
+      <p>The UEF is proud to be a part of the GFSS in the Orion Galaxy for the past 8 years.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="pics/ac-logo.png"" alt="AC" style="width:100%">
+      <h3>The Arkai Corporation</h3>
+      <p>One of the two co-founders of the UEF, the Arkai Corporation represents the strongest military powers of the UEF, hosting the fleet of Cronos Megastarships</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="pics/oe-logo.png" alt="OE" style="width:100%">
+      <h3>The Ombrian Empire</h3>
+      <p>Also co-founders of the UEF, the Ombrian Empire strives for unity among all entities in the system through a strong government and technological innovation.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="pics/ce-logo.png" alt="CE" style="width:100%">
+      <h3>Cyprian Empire</h3>
+      <p>The Empire has been pivotal to the success and growth of the UEF for over 200 years. Home planet of the UEF, Cyprus continues to be a icon of strength in the Federation.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="apply">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Apply for a Position</h3>
+    <p>For more information or to apply for a position, please fill out the form and hit submit.</p>
+    
+      <input class="w3-input" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section" type="text" placeholder="Galactic Federation Membership ID" required name="Galactic Federation Membership ID">
+      <input class="w3-input w3-section" type="text" placeholder="Occupation" required name="Occupation">
+      <input class="w3-input w3-section" type="text" placeholder="Inquiry" required name="Inquiry">
+      <form action="http://www.myth-weavers.com/">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> Submit Application
+      </button>
+    </form>
+  </div>
+  
+  <center><img src="pics/uef-logo.png" alt="CE" style="width:30%"></center>
+  
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Property of the United Eroth Federation</p>
+</footer>
+
+
+
 </body>
-<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCfNruQWIBmbZteqfiO6wk8tZo3XHMIyzA",
-    authDomain: "eroth-fc8c2.firebaseapp.com",
-    databaseURL: "https://eroth-fc8c2.firebaseio.com",
-    projectId: "eroth-fc8c2",
-    storageBucket: "",
-    messagingSenderId: "513269340052"
-  };
-  firebase.initializeApp(config);
-</script>
 </html>
