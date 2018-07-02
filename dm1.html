@@ -4,7 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
+<body onload="myFunction();">
+<script>
+function myFunction() {
+    var x = document.getElementById("doc");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -34,7 +48,7 @@
   <div class="w3-container w3-padding-32" id="info">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Information</h3>
     <p>Welcome to the United Eroth Federation's DM Information Page. If you're not Tristan, please leave this page you meta-gamer.
-    </p>
+   </p>
     <!-- Information Page  -->
     <h5 class="w3-border-bottom w3-border-light-grey w3-padding-16">DM Links</h5>
 	<p><a href="https://www.sfrpgtools.com/" class="w3-button w3-light-grey w3-block">Starfinder Tools</a></p>
@@ -46,7 +60,9 @@
   </div>
 
   </div>
+  <div id="doc">
       <center><iframe src="https://docs.google.com/document/d/1mXq0y0BtQMPEML9ctN54K9WvhaUS0_mpPRndmYHNrKc/edit?usp=sharing" width="80%" height="1000px"></iframe></center>
+  </div>
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="questions">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
@@ -56,8 +72,7 @@
       <input class="w3-input w3-section" type="text" placeholder="Galactic Federation Membership ID" required name="Galactic Federation Membership ID">
       <input class="w3-input w3-section" type="text" placeholder="Inquiry Topic" required name="Inquiry Topic">
       <input class="w3-input w3-section" type="text" placeholder="Inquiry" required name="Inquiry">
-      <form action="http://www.myth-weavers.com/">
-      <button class="w3-button w3-black w3-section" type="submit">
+      <button onclick="myFunction()" class="w3-button w3-black w3-section" type="submit">
         <i class="fa fa-paper-plane"></i> Submit Application
       </button>
     </form>
