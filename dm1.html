@@ -4,18 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body onload="myFunction();">
-<script>
-function myFunction() {
-    var x = document.getElementById("doc");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-</script>
-
+<body>
 
 
 
@@ -54,14 +43,34 @@ function myFunction() {
 	<p><a href="https://www.sfrpgtools.com/" class="w3-button w3-light-grey w3-block">Starfinder Tools</a></p>
     <p><a href="http://www.starjammersrd.com/" class="w3-button w3-light-grey w3-block">Starfinder SRD</a></p>
 	<p><a href="https://drive.google.com/drive/folders/0B41gH-TsdrYCVjhkSmt5am81d3c" class="w3-button w3-light-grey w3-block">Starfinder PDFs Google Drive</a></p>
-    <h5 class="w3-border-bottom w3-border-light-grey w3-padding-16">DM Plans</h5>
-
-
-  </div>
-
-  </div>
-  <div id="doc">
+    
+    
+  
+  <h5 class="w3-border-bottom w3-border-light-grey w3-padding-16">DM Docs</h5> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <p><input class="w3-button w3-light-grey w3-block" type="button" value="Show Setting Doc" onclick="$('#doc').toggle();"/></p>
+  <div id="doc"
+        style="display:none">
       <center><iframe src="https://docs.google.com/document/d/1mXq0y0BtQMPEML9ctN54K9WvhaUS0_mpPRndmYHNrKc/edit?usp=sharing" width="80%" height="1000px"></iframe></center>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <p><input class="w3-button w3-light-grey w3-block" type="button" value="Show Setting Doc" onclick="$('#doc2').toggle();"/></p>
+  <div id="doc2"
+        style="display:none">
+      <center><iframe src="https://docs.google.com/document/d/1KRsp-gPDLqOoBMPax7-Hayv-zbM7az--B1xOpGk8BEU/edit?usp=sharing" width="80%" height="1000px"></iframe></center>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <p><input class="w3-button w3-light-grey w3-block" type="button" value="Show Lists Doc" onclick="$('#doc3').toggle();"/></p>
+  <div id="doc3"
+        style="display:none">
+      <center><iframe src="https://docs.google.com/document/d/1mV_vgUX9twoFYws5E8WD3iJg3t8mbXIgqbzQ6Ocr-wc/edit?usp=sharing" width="80%" height="1000px"></iframe></center>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <p><input class="w3-button w3-light-grey w3-block" type="button" value="Show Ideas Doc" onclick="$('#doc4').toggle();"/></p>
+  <div id="doc4"
+        style="display:none">
+      <center><iframe src="https://docs.google.com/document/d/1s4h6HcPjE5fEjwLq0QOpyF3eeS1uTL8blVSqNQZtYt0/edit?usp=sharing" width="80%" height="1000px"></iframe></center>
+  </div>
   </div>
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="questions">
@@ -72,7 +81,7 @@ function myFunction() {
       <input class="w3-input w3-section" type="text" placeholder="Galactic Federation Membership ID" required name="Galactic Federation Membership ID">
       <input class="w3-input w3-section" type="text" placeholder="Inquiry Topic" required name="Inquiry Topic">
       <input class="w3-input w3-section" type="text" placeholder="Inquiry" required name="Inquiry">
-      <button onclick="myFunction()" class="w3-button w3-black w3-section" type="submit">
+      <button class="w3-button w3-black w3-section" type="submit">
         <i class="fa fa-paper-plane"></i> Submit Application
       </button>
     </form>
@@ -89,7 +98,7 @@ function myFunction() {
   <p>Property of the United Eroth Federation</p>
 </footer>
 
-
+<span id="hiddenSpan" style="display:none">Just toggle me</span>
 
 </body>
 </html>
